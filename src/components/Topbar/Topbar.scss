@@ -10,7 +10,7 @@
   &::-webkit-scrollbar {
     display: none;
   }
-  z-index: 2;
+  z-index: 3;
   .wrapper {
     padding: 15px 30px;
     display: flex;
@@ -72,19 +72,19 @@
     }
   }
 
-  &.active{
+  &.active {
     background-color: $black-background;
     color: $black-color;
-    .hamburger{
-      span{
-        &:first-child{
+    .hamburger {
+      span {
+        &:first-child {
           background-color: white;
           transform: rotate(45deg);
         }
-        &:nth-child(2){
+        &:nth-child(2) {
           opacity: 0;
         }
-        &:last-child{
+        &:last-child {
           background-color: white;
           transform: rotate(-45deg);
         }
