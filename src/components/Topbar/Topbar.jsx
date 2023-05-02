@@ -1,10 +1,11 @@
 import './Topbar.scss';
 
 const Topbar = (props) => {
-  const {menuOpen,setMenuOpen} = props;
+  const { menuOpen, setMenuOpen } = props;
   return (
     // <div className={'topbar' + (menuOpen && 'active')} id="topbar">
-    <div className={'topbar' + (menuOpen ? ' active' : '')} id="topbar">
+    // <div className={'topbar' + (menuOpen ? ' active' : '')} id="topbar">
+    <div className={`topbar ${menuOpen ? 'active' : ''}`}>
       <div className="wrapper">
         <div className="left">
           <a href="#intro">Ahmad</a>
