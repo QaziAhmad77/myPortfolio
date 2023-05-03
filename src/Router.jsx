@@ -10,6 +10,7 @@ import { Route, Routes } from 'react-router-dom';
 
 const Router = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  
   return (
     <>
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
@@ -17,7 +18,7 @@ const Router = () => {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <Routes>
-          <Route path="/intro" element={<Intro />} />
+          <Route path="/" element={<Intro />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/works" element={<Works />} />
           <Route path="/testimonials" element={<Testimonials />} />
