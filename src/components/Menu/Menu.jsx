@@ -6,7 +6,7 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
     <div className={`menu ${menuOpen ? 'active' : ''}`}>
       <ul>
         <li onClick={() => setMenuOpen(false)}>
-          <Link to="/intro">Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li onClick={() => setMenuOpen(false)}>
           <Link to="/portfolio">Portfolio</Link>
