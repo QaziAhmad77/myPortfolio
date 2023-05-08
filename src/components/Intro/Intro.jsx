@@ -1,7 +1,11 @@
 import './Intro.scss';
 import { Link } from 'react-router-dom';
+import { useRef, useState } from 'react';
+import Typewriter from 'typewriter-effect';
 
 const Intro = () => {
+  const text = useRef();
+
   return (
     <div className="intro" id="intro">
       <div className="left">
@@ -11,13 +15,58 @@ const Intro = () => {
       </div>
       <div className="right">
         <div className="wrapper">
-          <h2>Hi There, I'm</h2>
+          <h2>Hi 🖐️, I'm</h2>
           <h1>Qazi Ahmad</h1>
-          <h3>Mern Stack Developer <span></span></h3>
+          <h3>
+            <span ref={text}>
+              <Typewriter
+                options={{
+                  autoStart: true,
+                  loop: true,
+                  delay: 40,
+                  strings: [
+                    'Computer Systems Engineer',
+                    'Mern Stack Developer',
+                    'Tech Enthusiast',
+                  ],
+                }}
+              />
+            </span>
+          </h3>
+          <p>
+            <Typewriter
+              options={{
+                autoStart: true,
+                loop: true,
+                delay: 50,
+                pauseFor: 9999999,
+                strings: [
+                  'Hello, my name is Ahmad and I am a MERN stack developer. I specialize in building full-stack web applications using MongoDB, Express.js, React, and Node.js. With my expertise in these technologies, I am able to design and develop dynamic web applications that are responsive, scalable, and efficient. I have a degree in Computer Systems Engineering and I am passionate about using technology to solve real-world problems.',
+                ],
+              }}
+            />
+          </p>
+          <div className="btns">
+            <div className="btn">
+              <button className="btn1">Download CV</button>
+              <button className="btn2">Contact</button>
+            </div>
+            <Link to="/portfolio" className="link">
+              <img src="src/Images/downarrow.png" alt="" />
+            </Link>
+          </div>
         </div>
-        <Link to="/portfolio" className='link'>
-          <img src="src/Images/downarrow.png" alt="" />
-        </Link>
+        <div className="dots">
+          <Link to="/portfolio" className="link">
+            <i className="fa-solid fa-circle"></i>
+          </Link>
+          <Link to="/works" className="link">
+            <i className="fa-solid fa-circle"></i>
+          </Link>
+          <Link to="/testimonials" className="link">
+            <i className="fa-solid fa-circle"></i>
+          </Link>
+        </div>
       </div>
     </div>
   );
