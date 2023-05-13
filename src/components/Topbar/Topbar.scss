@@ -3,10 +3,11 @@
 .topbar {
   width: 100%;
   height: 70px;
-  background-color: $topbar-color;
+  background-color: $black-background;
   color: $lightBlue-color;
   position: fixed;
   top: 0;
+  border-bottom: 5px solid black;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -16,7 +17,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     .left {
       display: flex;
       align-items: center;
@@ -27,12 +27,10 @@
       a:hover::after {
         content: ' MERN STACK DEVELOPER';
         font-size: 15px;
-        display: flex;
-        flex-direction: column;
         color: $lightBlue-color;
       }
       a {
-        color: red;
+        color: white;
         font-size: 30px;
         font-weight: 700;
         text-decoration: none;
