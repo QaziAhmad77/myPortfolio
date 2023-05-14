@@ -10,7 +10,7 @@ const Topbar = (props) => {
     <div className={`topbar ${menuOpen ? 'active' : ''}`}>
       <div className="wrapper">
         <div className="left">
-          <Link href="/intro">Ahmad</Link>
+          <Link className='link' href="/intro">Ahmad</Link>
           {/* <div className="itemContainer">
             <i className="fa fa-user"></i>
             <span>+091 03331602121</span>
