@@ -119,7 +119,7 @@
             p {
               font-size: 13px;
               @include mobile {
-                display: none;
+                display: no;
               }
             }
             span {
