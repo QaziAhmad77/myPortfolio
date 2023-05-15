@@ -32,10 +32,10 @@ const Router = () => {
               </>
             }
           />
-          {/* <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/works" element={<Works />} />
           <Route path="/testimonials" element={<Testimonials />} />
-          <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </>
