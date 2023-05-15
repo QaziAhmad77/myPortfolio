@@ -65,6 +65,39 @@
         }
       }
     }
+    .routes {
+      display: flex;
+      gap: 1.5rem;
+      overflow: hidden;
+      .routeLink {
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+        border-radius: 5px;
+        padding: 5px;
+        border: .5px solid black;
+        transition: 0.5s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      .Portfolio:focus {
+        background-color: $lightBlue-color;
+        color: black;
+      }
+      .Works:focus {
+        background-color: $lightBlue-color;
+        color: black;
+      }
+      .Testimonial:focus {
+        background-color: $lightBlue-color;
+        color: black;
+      }
+      .Contact:focus {
+        background-color: $lightBlue-color;
+        color: black;
+      }
+    }
     .right {
       .hamburger {
         width: 32px;
