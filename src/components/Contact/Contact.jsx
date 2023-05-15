@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <div className="contact" id="conatct">
       <div className="left">
-        <img src="src/Images/laptop.jpg" alt="" />
+        <img src="src/Images/laptop1.avif" alt="" />
       </div>
       <div className="right">
         <h2>Contact.</h2>
