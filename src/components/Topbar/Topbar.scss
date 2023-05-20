@@ -69,34 +69,37 @@
       display: flex;
       gap: 1.5rem;
       overflow: hidden;
+      @include mobile {
+        display: none;
+      }
       .routeLink {
         color: white;
         text-decoration: none;
         font-size: 22px;
         border-radius: 5px;
         padding: 5px;
-        border: .5px solid black;
+        border: 0.5px solid $lightBlue-color;
         transition: 0.5s;
         &:hover {
           transform: scale(1.1);
         }
       }
-      .Portfolio:focus {
-        background-color: $lightBlue-color;
-        color: black;
-      }
-      .Works:focus {
-        background-color: $lightBlue-color;
-        color: black;
-      }
-      .Testimonial:focus {
-        background-color: $lightBlue-color;
-        color: black;
-      }
-      .Contact:focus {
-        background-color: $lightBlue-color;
-        color: black;
-      }
+      // .Portfolio:focus {
+      //   background-color: $lightBlue-color;
+      //   color: black;
+      // }
+      // .Works:focus {
+      //   background-color: $lightBlue-color;
+      //   color: black;
+      // }
+      // .Testimonial:focus {
+      //   background-color: $lightBlue-color;
+      //   color: black;
+      // }
+      // .Contact:focus {
+      //   background-color: $lightBlue-color;
+      //   color: black;
+      // }
     }
     .right {
       .hamburger {
