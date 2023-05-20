@@ -20,21 +20,11 @@ const Router = () => {
         setColor={setColor}
       />
       <div className="sections">
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <Intro color={color} setColor={setColor} /> <Portfolio />{' '}
-                <Works /> <Testimonials /> <Contact />
-              </>
-            }
-          />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/works" element={<Works />} />
-          <Route path="/testimonials" element={<Testimonials />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <Intro id="intro-section" color={color} setColor={setColor} />
+        <Portfolio id="portfolio-section" />
+        <Works id="work-section" />
+        <Testimonials id="testimonials-section" />
+        <Contact id="contact-section" />
       </div>
     </>
   );
