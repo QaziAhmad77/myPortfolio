@@ -13,7 +13,12 @@ const Topbar = (props) => {
     <div className={`topbar ${menuOpen ? 'active' : ''}`}>
       <div className="wrapper">
         <div className="left">
-          <Link className="link" to="/">
+          <Link
+            className="link"
+            to="/"
+            onClick={() => setColor('blue')}
+            style={{ backgroundColor: color === 'blue' ? '' : '' }}
+          >
             Ahmad
           </Link>
           {/* <div className="itemContainer">
