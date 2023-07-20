@@ -2,14 +2,15 @@ import { useState } from 'react';
 import './Contact.scss';
 
 const Contact = () => {
-  const [message,setMessage] = useState(false)
+  const [message, setMessage] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
-    setMessage(true)
+    setMessage(true);
   };
   return (
     <div className="contact" id="conatct">
       <div className="left">
+        Picture
         <img src="src/Images/laptop1.avif" alt="" />
       </div>
       <div className="right">
