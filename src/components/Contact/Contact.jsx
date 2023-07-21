@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Contact.scss';
+import img from '../../Images/laptop1.avif';
 
 const Contact = () => {
   const [message, setMessage] = useState(false);
@@ -11,7 +12,7 @@ const Contact = () => {
     <div className="contact" id="conatct">
       <div className="left">
         Picture
-        <img src="src/Images/laptop1.avif" alt="" />
+        <img src={img} alt="" />
       </div>
       <div className="right">
         <h2>Contact.</h2>
