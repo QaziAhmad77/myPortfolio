@@ -48,7 +48,16 @@ const Works = () => {
   };
   return (
     <div className="works" id="works">
-    <h1 style={{fontSize:"3rem",color:"white",position:"absolute",top:"100px"}}>Projects</h1>
+      <h1
+        style={{
+          fontSize: '3rem',
+          color: 'white',
+          position: 'absolute',
+          top: '100px',
+        }}
+      >
+        Projects
+      </h1>
       <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
@@ -65,7 +74,9 @@ const Works = () => {
                     <h2>{item.title}</h2>
                     <p>{item.desc}</p>
                     <span>
-                      <Link style={{color:"blue"}} to={item.lnk}>Click Here to see</Link>
+                      <Link style={{ color: 'blue' }} to={item.lnk}>
+                        Click Here to see
+                      </Link>
                     </span>
                   </div>
                 </div>

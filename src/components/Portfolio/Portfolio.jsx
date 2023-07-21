@@ -1,41 +1,47 @@
 import { useEffect, useState } from 'react';
 import './Portfolio.scss';
-import PortfolioList from './../PortfolioList/PortfolioList';
+import html from '../../Images/html.png';
+import css from '../../Images/css.webp';
+import tailwind from '../../Images/tailwind2.png';
+import react from '../../Images/react3.jpg';
+import nodejs from '../../Images/nodejs.png';
+import js from '../../Images/js5.jpg';
+import github from '../../Images/github.jpg';
 
 const Portfolio = () => {
   const list = [
     {
-      image: 'src/Images/html.png',
+      image: html,
       title: 'HTML Experience',
       desc: 'I have been working with HTML for the past 2 years, creating webpages and structuring content.',
     },
     {
-      image: 'src/Images/css.webp',
+      image: css,
       title: 'CSS Styling Skills',
       desc: 'Proficient in CSS, utilizing it to style and design visually appealing websites and applications.',
     },
     {
-      image: 'src/Images/tailwind2.png',
+      image: tailwind,
       title: 'Embracing Tailwind CSS',
       desc: 'Recently adopted Tailwind CSS for efficient and rapid UI development, streamlining my workflow.',
     },
     {
-      image: 'src/Images/react3.jpg',
+      image: react,
       title: 'Passionate About React',
       desc: " I've been actively developing with React, building interactive and dynamic user interfaces.",
     },
     {
-      image: 'src/Images/nodejs.png',
+      image: nodejs,
       title: 'Node.js for Scalability',
       desc: 'Utilizing Node.js to build scalable and server-side applications,enhancing the performance.',
     },
     {
-      image: 'src/Images/js5.jpg',
+      image: js,
       title: 'Node.js for Scalability',
       desc: 'I have been working with HTML for the past 2 years, creating webpages and structuring content.',
     },
     {
-      image: 'src/Images/github.jpg',
+      image: github,
       title: 'Collaboration with GitHub',
       desc: 'Leveraging GitHub for version control and collaborative development, ensuring seamless teamwork.',
     },
