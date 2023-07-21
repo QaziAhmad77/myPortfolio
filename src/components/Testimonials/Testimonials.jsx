@@ -1,5 +1,4 @@
 import './Testimonials.scss';
-import umair from '../../Images/umair.PNG';
 import farrukh from '../../Images/farrukh.jpeg';
 import hashir from '../../Images/hashir.jpeg';
 
@@ -9,7 +8,6 @@ const Testimonials = () => {
       id: 1,
       name: 'Umair Syed',
       title: 'Software Engineer',
-      img: umair,
       icon: 'assets/twitter.png',
       desc: ' Qazi Ahmad dedication and problem-solving abilities are commendable, making him a valuable asset to our team. He consistently delivers high-quality work, and his passion for coding is truly inspiring.',
     },
