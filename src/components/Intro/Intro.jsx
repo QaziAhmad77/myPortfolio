@@ -2,6 +2,8 @@ import './Intro.scss';
 import { Link } from 'react-router-dom';
 import { useRef, useState } from 'react';
 import Typewriter from 'typewriter-effect';
+import man from "../../Images/man.png"
+
 
 const Intro = (props) => {
   const text = useRef();
@@ -10,7 +12,7 @@ const Intro = (props) => {
     <div className={`intro ${color ? 'active' : ''}`} id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="src/Images/man.png" alt="" />
+          <img src={man} alt="" />
         </div>
         <div className="iconContainer">
           <Link to="https://www.instagram.com/ahmad302420/">
