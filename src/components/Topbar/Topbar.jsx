@@ -37,7 +37,7 @@ const Topbar = (props) => {
             onClick={() => setColor('blue')}
             style={{ backgroundColor: color === 'blue' ? '#79b8f3' : '' }}
           >
-            Portfolio
+            Technologies
           </Link>
           <Link
             className="routeLink Works"
@@ -45,7 +45,7 @@ const Topbar = (props) => {
             onClick={() => setColor('green')}
             style={{ backgroundColor: color === 'green' ? '#79b8f3' : '' }}
           >
-            Works
+            Projects
           </Link>
           <Link
             className="routeLink Testimonial"
