@@ -2,67 +2,60 @@ import { useEffect, useState } from 'react';
 import './Portfolio.scss';
 import PortfolioList from './../PortfolioList/PortfolioList';
 
-import {
-  featuredPortfolio,
-  webPortfolio,
-  mobilePortfolio,
-  designPortfolio,
-  contentPortfolio,
-} from '../../common/data';
-
 const Portfolio = () => {
-  const [selected, setSelected] = useState('featured');
-  const [data, setData] = useState([]);
   const list = [
-    { id: 'featured', title: 'Featured' },
-    { id: 'web', title: 'Web App' },
-    { id: 'mobile', title: 'Mobile App' },
-    { id: 'design', title: 'Design' },
-    { id: 'content', title: 'Content' },
+    {
+      image: 'src/Images/html.png',
+      title: 'HTML Experience',
+      desc: 'I have been working with HTML for the past 2 years, creating webpages and structuring content.',
+    },
+    {
+      image: 'src/Images/css.webp',
+      title: 'CSS Styling Skills',
+      desc: 'Proficient in CSS, utilizing it to style and design visually appealing websites and applications.',
+    },
+    {
+      image: 'src/Images/tailwind2.png',
+      title: 'Embracing Tailwind CSS',
+      desc: 'Recently adopted Tailwind CSS for efficient and rapid UI development, streamlining my workflow.',
+    },
+    {
+      image: 'src/Images/react3.jpg',
+      title: 'Passionate About React',
+      desc: " I've been actively developing with React, building interactive and dynamic user interfaces.",
+    },
+    {
+      image: 'src/Images/nodejs.png',
+      title: 'Node.js for Scalability',
+      desc: 'Utilizing Node.js to build scalable and server-side applications,enhancing the performance.',
+    },
+    {
+      image: 'src/Images/js5.jpg',
+      title: 'Node.js for Scalability',
+      desc: 'I have been working with HTML for the past 2 years, creating webpages and structuring content.',
+    },
+    {
+      image: 'src/Images/github.jpg',
+      title: 'Collaboration with GitHub',
+      desc: 'Leveraging GitHub for version control and collaborative development, ensuring seamless teamwork.',
+    },
   ];
-  useEffect(() => {
-    switch (selected) {
-      case 'featured':
-        setData(featuredPortfolio);
-        break;
-      case 'web':
-        setData(webPortfolio);
-        break;
-      case 'mobile':
-        setData(mobilePortfolio);
-        break;
-      case 'design':
-        setData(designPortfolio);
-        break;
-      case 'content':
-        setData(contentPortfolio);
-        break;
-      default:
-        setData(featuredPortfolio);
-    }
-  }, [selected]);
   return (
     <div className="portfolio" id="portfoloio">
-      <h1>Portfolio</h1>
-      <ul>
+      <h1 style={{ textAlign: 'center', color: 'white', fontSize: '3rem' }}>
+        Technologies I can work With
+      </h1>
+      <div className="card">
         {list.map((item) => {
           return (
-            <PortfolioList
-              key={item.id}
-              title={item.title}
-              selected={selected}
-              setSelected={setSelected}
-              id={item.id}
-            />
-          );
-        })}
-      </ul>
-      <div className="container">
-        {data.map((item) => {
-          return (
-            <div className="item">
-              <img src={item.img} alt="" />
-              <h3>{item.title}</h3>
+            <div className="container">
+              <div className="imageBox">
+                <img src={item.image} alt="" />
+              </div>
+              <div className="content">
+                <h2>{item.title}</h2>
+                <p>{item.desc}</p>
+              </div>
             </div>
           );
         })}

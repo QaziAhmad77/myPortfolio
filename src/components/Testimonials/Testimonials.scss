@@ -1,8 +1,8 @@
 @import '../../common/colors.scss';
-@import "../../global.scss";
+@import '../../global.scss';
 
 .testimonials {
-  background-color: white;
+  background-color: royalblue;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,6 +13,7 @@
   h1 {
     font-size: 50px;
     margin-top: 1rem;
+    color: white;
     @include mobile {
       font-size: 20px;
     }
@@ -39,6 +40,7 @@
       justify-content: space-around;
       padding: 20px;
       transition: all 1s ease;
+      background-color: white;
       @include mobile {
         height: 180px;
         margin: 10px 0;
