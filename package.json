@@ -1,6 +1,6 @@
 {
-  "name": "portfolio",
   "homepage": "https://QaziAhmad77.github.io/myPortfolio",
+  "name": "portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
