@@ -48,7 +48,16 @@ const Portfolio = () => {
   ];
   return (
     <div className="portfolio" id="portfoloio">
-      <h1 style={{ textAlign: 'center', color: 'white', fontSize: '3rem' }}>
+      <h1
+        style={{
+          text: 'center',
+          height: '14rem',
+          color: 'white',
+          fontSize: '3rem',
+          paddingTop:"2rem",
+          borderBottom:"5px solid"
+        }}
+      >
         Technologies I can work With
       </h1>
       <div className="card">
